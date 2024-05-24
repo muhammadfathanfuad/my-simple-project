@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  /* background: linear-gradient(45deg, #061de3, #e306ca); */
+  font-family: Helvetica, sans-serif;
+  color: rgb(211, 211, 211);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 220px;
+  height: 300px;
+  perspective: 800px;
+  margin-left: 20px;
+}
+
+.container:hover > .card {
+  cursor: pointer;
+  transform: rotateY(180deg);
+}
+
+.card {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  transition: transform 1500ms;
+  transform-style: preserve-3d;
+}
+
+.front,
+.back {
+  height: 100%;
+  width: 100%;
+  border-radius: 2rem;
+  box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.front {
+  padding: 20px;
+}
+/* untuk bagan front */
+.judul2 {
+  margin: auto;
+  padding-top: 1rem;
+  text-align: center;
+  color: black;
+}
+.gambar-segitiga {
+  width: 160px;
+  margin-top: 1.5rem;
+  margin-left: 10px;
+}
+/* akhir bagian front */
+.back {
+  background-color: white;
+  color: black;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  display: inline;
+  overflow: auto;
+  scrollbar-width: none;
+  /* overflow-x: hidden; 
+  overflow-y: hidden; */
+}
+/* bagian back */
+.segitiga {
+  margin-top: 20px;
+  width: 80px;
+  height: 90px;
+}
+.rumus_segitiga {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.ket {
+  font-size: medium;
+}
+/* Akhir bagian back */
+.input {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  margin: auto;
+}
+input {
+  margin: 10px;
+}
+.button {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+#output {
+  margin-top: 0px;
+}
+.hasil {
+  margin: 40px;
+  font-size: xx-large;
+}
+/* Akhir section satu */
+/* masuk section dua */
+
+/* Front */
+.gambar-menghitung {
+  width: 190px;
+}
+
+/* Back */
+.input2 {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 200px;
+}
+.input-kecil {
+  width: 50px;
+  margin: 5px;
+  padding: 5px;
+}
+.button2 {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px;
+}
+.hasil2 {
+  margin-top: 20px;
+}
+
+.nilai-terbesar {
+  margin-top: 40px;
+  text-align: center;
+  color: black;
+}
+/* akhir section dua */
+/* masuk ke section 3 */
+.gambar-nilai {
+  width: 140px;
+  margin-top: 1.5rem;
+  margin-left: 20px;
+}
+/* .input2 {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 200px;
+} */
+.input-kecil2 {
+  width: 55px;
+  margin: 5px;
+  padding: 0px;
+}
+.nilai-siswa {
+  margin-top: 40px;
+  text-align: center;
+  color: black;
+}
+.button3 {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px;
+}
+.hasil3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.tambah {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+/* akhir sesi tiga */
+
+/* masuk sesi 4 */
+.input4 {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 215px;
+}
+.input-kecil3 {
+  width: 70px;
+  height: 50px;
+  padding: 5px;
+  text-align: center;
+}
+.button4 {
+  margin-top: 10px;
+  margin-left: 55px;
+  padding: 10px;
+}
+.hasil4 {
+  margin-top: 20px;
+  text-align: center;
+}
+.nilai-angka {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+/* akhir sesi empat */
+/* masuk sesi lima */
+.tabel {
+  margin-top: 0px;
+  margin-left: 10px;
+  width: 200px;
+  height: 90px;
+}
+.tiket {
+  margin-top: 10px;
+  text-align: center;
+}
+.akhir{
+  margin-left: 10px;
+}
+.button5{  
+  margin-left: 50px;
+}
+.hasil5 {
+  margin-top: 20px;
+  text-align: center;
+}

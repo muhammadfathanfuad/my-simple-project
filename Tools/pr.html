@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <title>Flip Card</title>
+  </head>
+  <body>
+    <!-- menghitung Luas Segitiga -->
+    <section>
+      <div class="container">
+        <div class="card">
+          <div class="front">
+            <h1 class="judul2">Menghitung Luas segitiga</h1>
+            <img src="./asset/unnamed.png" alt="" class="gambar-segitiga" />
+          </div>
+          <div class="back">
+            <div class="rumus_segitiga">
+              <img
+                src="./asset/image.png"
+                alt="gambar segitiga siku-siku"
+                class="segitiga"
+              />
+              <div class="ket">
+                <h4>Ket:</h4>
+                <p class="ket-rumus">
+                  a : Tinggi segitiga <br />
+                  b : Alas segitiga <br />
+                  <br />
+                </p>
+                <h4>Rumus :</h4>
+                <p class="ket-rumus">&frac12; Alas x Tinggi</p>
+              </div>
+            </div>
+            <div class="input">
+              <input type="text" id="alas" placeholder="Masukkan alas" />
+              <input type="text" id="tinggi" placeholder="Masukkan tinggi" />
+            </div>
+            <div class="button">
+              <button id="hasil">Hasil</button>
+              <p> =</p>
+              <p id="output"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir menghitung luas segitiga -->
+    <!-- Menghitung nilai terbesar -->
+    <section>
+      <div class="container">
+        <div class="card">
+          <div class="front">
+            <h1 class="judul2">Menghitung Nilai terbesar</h1>
+            <img
+              src="./asset/menghitung.png"
+              alt=""
+              class="gambar-menghitung"
+            />
+          </div>
+          <div class="back">
+            <div class="nilai-terbesar">
+              <div>
+                <h3>Masukkan tiga angka yang berbeda</h3>
+              </div>
+            </div>
+            <div class="input2">
+              <input
+                type="number"
+                id="angka1"
+                placeholder="I"
+                class="input-kecil"
+              />
+              <input
+                type="number"
+                id="angka2"
+                placeholder="II"
+                class="input-kecil"
+              />
+              <input
+                type="number"
+                id="angka3"
+                placeholder="III"
+                class="input-kecil"
+              />
+            </div>
+
+            <div class="button2">
+              <button onclick="cariNilaiTerbesar()">Cari Nilai Terbesar</button>
+              <p id="hasil2" class="hasil2"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir sesi dua -->
+    <!-- menghitung nilai siswa -->
+    <section>
+      <div class="container">
+        <div class="card">
+          <div class="front">
+            <h1 class="judul2">Menghitung nilai Siswa</h1>
+            <img src="./asset/nilai.png" alt="" class="gambar-nilai" />
+          </div>
+          <div class="back">
+            <div class="nilai-siswa">
+              <h3>Masukkan Nilai Siswa</h3>
+            </div>
+            <div class="input2">
+              <input
+                type="number"
+                id="tugas"
+                placeholder="Tugas"
+                class="input-kecil2"
+              />
+              <input
+                type="number"
+                id="uts"
+                placeholder="UTS"
+                class="input-kecil2"
+              />
+              <input
+                type="number"
+                id="uas"
+                placeholder="UAS"
+                class="input-kecil2"
+              />
+            </div>
+
+            <div class="button3">
+              <button onclick="hitungNilai()">Hitung Nilai Siswa</button>
+              <p class="hasil3">Nilai Akhir Siswa : <br><br>
+                <span id="hasil3" class="hasil3"></span> 
+              </p>
+            </div>
+            <div class="tambah">
+              <p>Ket : <br> A&gt;80 B&gt;70 C&gt;60 D&lt;60  </p>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir sesi tiga -->
+    <!-- menentukan nilai Ganjil Atau genap -->
+    <section>
+      <div class="container">
+        <div class="card">
+          <div class="front">
+            <h1 class="judul2">Menentukan Ganjil / Genap</h1>
+            <img src="./asset/mikir.png" alt="" class="gambar-segitiga" />
+          </div>
+          <div class="back">
+            <div class="nilai-angka"><h3>Masukkan Angka</h3></div>
+            <div class="input4">
+              <input
+                type="number"
+                id="input"
+                placeholder="input"
+                class="input-kecil3"
+              />
+            </div>
+            <div class="button4">
+              <button onclick="cekGanjilGenap()">Ganjil / Genap</button>
+            </div>
+            <h2 id="hasil4" class="hasil4"></h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir sesi empat -->
+    <!-- Menentukan harga Tiket -->
+    <section>
+      <div class="container">
+        <div class="card">
+          <div class="front">
+            <h1 class="judul2">Menentukan harga Tiket</h1>
+            <img src="./asset/stasiun.png" alt="" class="gambar-segitiga" />
+          </div>
+          <div class="back">
+            <div class="">
+              <p class="tiket">Harga tiket kereta api</p>
+              <img
+                src="./asset/tabel.png"
+                alt="gambar segitiga siku-siku"
+                class="tabel"
+              />
+              <!-- <h2>Penentuan Harga Tiket</h2> -->
+              <div class="akhir"><form id="ticketForm">
+                  <label for="tujuan">Masukkan Tujuan (1.jakarta  2.Bali):</label>
+                  <input type="number" id="tujuan" name="tujuan"><br>
+
+              <label for="kelas">Pilih Kelas :</label>
+              <select id="kelas" name="kelas">
+                  <option value="">--Pilih Kelas--</option>
+                  <option value="E">Ekonomi</option>
+                  <option value="B">Bisnis</option>
+              </select><br><br>
+
+              <label for="jumlah">Masukkan Jumlah:</label>
+              <input type="number" id="jumlah" name="jumlah"><br>
+
+            </form>
+            <button type="button" onclick="hitungTotal()" class="button5">Total Harga Tiket</button>
+            <p id="hasil5" class="hasil5"></p></div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./tools.js"></script>
+  </body>
+</html>
+
+
+
+<!-- 
+Buat program untuk menghitung
+- luas segitiga
+- nilai terbesar dari tiga nilai yang di masukkan
+- menghitung nilai apakah A/b/c/d/e dari inputan berupa tugas, uts, uas
+- menentukan apakah nilai tersebut ganjil atau genap
+- lihat contoh 1 video nested if
+-->
