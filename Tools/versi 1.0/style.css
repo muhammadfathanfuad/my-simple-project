@@ -19,6 +19,14 @@ body {
   border: 1px solid;
   border-radius: 4px;
 }
+
+.back {
+  background-color: white;
+  color: black;
+  padding: 0;
+  margin: 0;
+  display: inline;
+}
 .card {
   height: 100%;
   width: 100%;
@@ -35,18 +43,10 @@ body {
 }
 
 /* bagian satu */
-.back {
-  background-color: white;
+.luas-segitiga {
+  margin-top: 10px;
+  text-align: center;
   color: black;
-  transform: rotateY(180deg);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0;
-  margin: 0;
-  display: inline;
-  overflow: auto;
-  scrollbar-width: none;
 }
 .segitiga {
   margin-top: 20px;
@@ -181,7 +181,6 @@ input {
 .container1 {
   width: 220px;
   height: 355px;
-  /* perspective: 800px; */
   margin-left: 20px;
   border: 1px solid;
   border-radius: 4px;
