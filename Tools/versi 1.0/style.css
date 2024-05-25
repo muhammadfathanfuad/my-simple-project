@@ -6,16 +6,27 @@
 
 body {
   height: 100vh;
-  overflow: hidden;
-  /* background: linear-gradient(45deg, #061de3, #e306ca); */
   font-family: Helvetica, sans-serif;
   color: rgb(211, 211, 211);
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.container {
+  width: 220px;
+  height: 300px;
+  /* perspective: 800px; */
+  margin-left: 20px;
+  border: 1px solid;
+  border-radius: 4px;
+}
+.card {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
 
-.judul-besar{
+.judul-besar {
   position: absolute;
   top: 15%;
   left: 43%;
@@ -23,55 +34,8 @@ body {
   font-size: xx-large;
   color: black;
 }
-.container {
-  width: 220px;
-  height: 300px;
-  perspective: 800px;
-  margin-left: 20px;
-}
 
-.container:hover > .card {
-  cursor: pointer;
-  transform: rotateY(180deg);
-}
-
-.card {
-  height: 100%;
-  width: 100%;
-  position: relative;
-  transition: transform 1500ms;
-  transform-style: preserve-3d;
-}
-
-.front,
-.back {
-  height: 100%;
-  width: 100%;
-  border-radius: 2rem;
-  box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
-  position: absolute;
-  backface-visibility: hidden;
-}
-
-.front {
-  padding: 20px;
-}
-a{
-  text-decoration: none;
-}
-/* untuk bagan front */
-.judul2 {
-  margin: auto;
-  padding-top: 1rem;
-  text-align: center;
-  color: black;
-}
-.gambar-segitiga {
-  width: 160px;
-  margin-top: 1.5rem;
-  margin-left: 10px;
-}
-/* akhir bagian front */
+/* bagian satu */
 .back {
   background-color: white;
   color: black;
@@ -84,10 +48,7 @@ a{
   display: inline;
   overflow: auto;
   scrollbar-width: none;
-  /* overflow-x: hidden; 
-  overflow-y: hidden; */
 }
-/* bagian back */
 .segitiga {
   margin-top: 20px;
   width: 80px;
@@ -101,7 +62,7 @@ a{
 .ket {
   font-size: medium;
 }
-/* Akhir bagian back */
+
 .input {
   padding-top: 20px;
   display: flex;
@@ -125,15 +86,10 @@ input {
   margin: 40px;
   font-size: xx-large;
 }
-/* Akhir section satu */
-/* masuk section dua */
 
-/* Front */
-.gambar-menghitung {
-  width: 190px;
-}
+/* batas */
 
-/* Back */
+/* Bagian 2 */
 .input2 {
   padding-top: 20px;
   display: flex;
@@ -162,20 +118,8 @@ input {
   text-align: center;
   color: black;
 }
-/* akhir section dua */
-/* masuk ke section 3 */
-.gambar-nilai {
-  width: 140px;
-  margin-top: 1.5rem;
-  margin-left: 20px;
-}
-/* .input2 {
-  padding-top: 20px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 200px;
-} */
+/* batas */
+/* bagian 3 */
 .input-kecil2 {
   width: 55px;
   margin: 5px;
@@ -203,9 +147,9 @@ input {
   display: flex;
   justify-content: center;
 }
-/* akhir sesi tiga */
+/* batas */
 
-/* masuk sesi 4 */
+/* bagian 4 */
 .input4 {
   margin-top: 20px;
   display: flex;
@@ -233,8 +177,16 @@ input {
   justify-content: center;
   margin-top: 60px;
 }
-/* akhir sesi empat */
-/* masuk sesi lima */
+/* batas */
+/* bagian lima */
+.container1 {
+  width: 220px;
+  height: 355px;
+  /* perspective: 800px; */
+  margin-left: 20px;
+  border: 1px solid;
+  border-radius: 4px;
+}
 .tabel {
   margin-top: 0px;
   margin-left: 10px;
@@ -245,10 +197,10 @@ input {
   margin-top: 10px;
   text-align: center;
 }
-.akhir{
+.akhir {
   margin-left: 10px;
 }
-.button5{  
+.button5 {
   margin-left: 50px;
 }
 .hasil5 {
