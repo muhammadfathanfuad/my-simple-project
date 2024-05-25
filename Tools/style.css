@@ -14,7 +14,14 @@ body {
   justify-content: center;
   align-items: center;
 }
-
+.judul-besar{
+  position: absolute;
+  top: 15%;
+  left: 43%;
+  text-transform: uppercase;
+  font-size: xx-large;
+  color: black;
+}
 .container {
   width: 220px;
   height: 300px;
@@ -47,6 +54,9 @@ body {
 
 .front {
   padding: 20px;
+}
+a{
+  text-decoration: none;
 }
 /* untuk bagan front */
 .judul2 {
