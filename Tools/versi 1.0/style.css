@@ -15,7 +15,6 @@ body {
 .container {
   width: 220px;
   height: 300px;
-  /* perspective: 800px; */
   margin-left: 20px;
   border: 1px solid;
   border-radius: 4px;
